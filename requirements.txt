@@ -2,8 +2,6 @@ streamlit
 oauth2client
 google-api-python-client
 urllib3
-http.server
 httplib2
 pandas
 pickle-mixin
-os-win
