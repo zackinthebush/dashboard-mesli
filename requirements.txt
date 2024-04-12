@@ -2,7 +2,6 @@ streamlit
 oauth2client
 google-api-python-client
 urllib3
-socketserver
 threading
 http.server
 httplib2
