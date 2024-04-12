@@ -1,0 +1,12 @@
+streamlit
+oauth2client
+google-api-python-client
+webbrowser
+urllib3
+socketserver
+threading
+http.server
+httplib2
+pandas
+pickle-mixin
+os-win
