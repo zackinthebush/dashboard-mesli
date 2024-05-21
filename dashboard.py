@@ -91,9 +91,12 @@ st.write("Authentication successful. You can now access the Google Search Consol
 website = "https://www.mesli-consulting.com/"
 
 # build a request body
+start_date = st.date_input('Start date', value=pd.to_datetime('2023-03-07'))
+end_date = st.date_input('End date', value=pd.to_datetime('today').date())
+
 request_body = {
-    "startDate"	: '2023-03-07',
-    "endDate" : '2024-03-14',
+    "startDate"	: start_date.strftime('%Y-%m-%d'),
+    "endDate" : end_date.strftime('%Y-%m-%d'),
     "dimensions" : ['DATE','QUERY', 'PAGE' , 'country' ],
     "rowLimit" : 25000,
     "dataState" : "final"
@@ -142,10 +145,6 @@ if st.button('Deactivate Script'):
         }
         </style>
         """, unsafe_allow_html=True)
-
-
-start_date = st.date_input('Start date', value=pd.to_datetime('2023-03-07'))
-end_date = st.date_input('End date', value=pd.to_datetime('today').date())
 
 
 
